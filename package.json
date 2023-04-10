@@ -1,0 +1,25 @@
+{
+  "name": "cpapp",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "https://github.com/skawin21/cpapp.git",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^6",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@sap/ux-specification": "^1.108.2",
+    "sqlite3": "^5"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-risks": "cds watch --open risks/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-mitigations": "cds watch --open mitigations/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/risks",
+    "app/mitigations"
+  ]
+}
